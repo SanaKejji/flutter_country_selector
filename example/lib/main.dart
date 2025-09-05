@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_country_selector/country_button.dart';
 import 'package:flutter_country_selector/flutter_country_selector.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -20,9 +21,9 @@ class MyApp extends StatelessWidget {
         animation: theme,
         builder: (context, _) {
           return MaterialApp(
-            locale: const Locale('en'),
+            locale: const Locale('tr'),
             supportedLocales: const [
-              Locale('en'),
+              Locale('tr'),
             ],
             localizationsDelegates: const [
               GlobalMaterialLocalizations.delegate,
@@ -56,7 +57,7 @@ class _DemoPageState extends State<DemoPage> {
     CountrySelector.preloadFlags();
   }
 
-  show(BuildContext context) {
+  Future<IsoCode?> show(BuildContext context) {
     switch (navigationType) {
       case NavigationType.page:
         return Navigator.of(context).push(
@@ -101,14 +102,13 @@ class _DemoPageState extends State<DemoPage> {
           isScrollControlled: true,
         );
       case NavigationType.bottomSheet:
-        return showBottomSheet(
+        return showModalBottomSheet(
           context: context,
-          builder: (_) => MediaQuery(
-            data: MediaQueryData.fromView(View.of(context)),
-            child: SafeArea(
-              child: buildSelectorSheet(),
-            ),
+          builder: (_) => SizedBox(
+            height: MediaQuery.of(context).size.height - 90,
+            child: buildSelectorSheet(),
           ),
+          isScrollControlled: true,
         );
     }
   }
@@ -173,9 +173,10 @@ class _DemoPageState extends State<DemoPage> {
                         ],
                       ),
                     ),
-                    ElevatedButton(
-                        onPressed: () => show(context),
-                        child: const Text('Show')),
+                    CountryButton(
+                      isoCode: IsoCode.TR,
+                      onTap: () => show(context),
+                    ),
                   ],
                 ),
               ),
