@@ -154,7 +154,7 @@ abstract class CountrySelectorLocalization {
   /// No description provided for @search.
   ///
   /// In en, this message translates to:
-  /// **'Search'**
+  /// **'Search..'**
   String get search;
 
   /// No description provided for @typeToSearch.

@@ -1,9 +1,9 @@
 {
   "@@locale": "ar",
   "noResultMessage": "لا نتيجة",
-    "search": "يبحث",
+    "search": "..ابحث",
   "typeToSearch": "اكتب هنا للبحث عن دولة",
-  "selectCountry": "{country} يختار",
+  "selectCountry": "{country} اختار",
   "@selectCountry": {
     "description": "Semantic of the search box",
     "placeholders": {
@@ -237,7 +237,7 @@
   "tm_": "تركمانستان",
   "tn_": "تونس",
   "to_": "تونغا",
-  "tr_": "ديك رومى",
+  "tr_": "تركيا",
   "tt_": "ترينداد وتوباغو",
   "tv_": "توفالو",
   "tw_": "تايوان",

@@ -12,14 +12,14 @@ class CountrySelectorLocalizationAr extends CountrySelectorLocalization {
   String get noResultMessage => 'لا نتيجة';
 
   @override
-  String get search => 'يبحث';
+  String get search => '..ابحث';
 
   @override
   String get typeToSearch => 'اكتب هنا للبحث عن دولة';
 
   @override
   String selectCountry(String country) {
-    return '$country يختار';
+    return '$country اختار';
   }
 
   @override
@@ -695,7 +695,7 @@ class CountrySelectorLocalizationAr extends CountrySelectorLocalization {
   String get to_ => 'تونغا';
 
   @override
-  String get tr_ => 'ديك رومى';
+  String get tr_ => 'تركيا';
 
   @override
   String get tt_ => 'ترينداد وتوباغو';

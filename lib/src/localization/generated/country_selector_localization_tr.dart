@@ -12,7 +12,7 @@ class CountrySelectorLocalizationTr extends CountrySelectorLocalization {
   String get noResultMessage => 'Sonuç yok';
 
   @override
-  String get search => 'Aramak';
+  String get search => 'Ara..';
 
   @override
   String get typeToSearch => 'Bir ülkeyi aramak için buraya yazın';

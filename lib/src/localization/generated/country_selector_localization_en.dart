@@ -12,7 +12,7 @@ class CountrySelectorLocalizationEn extends CountrySelectorLocalization {
   String get noResultMessage => 'No result';
 
   @override
-  String get search => 'Search';
+  String get search => 'Search..';
 
   @override
   String get typeToSearch => 'Type here to search for a country';

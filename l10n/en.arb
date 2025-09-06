@@ -1,7 +1,7 @@
 {
   "@@locale": "en",
   "noResultMessage": "No result",
-  "search": "Search",
+  "search": "Search..",
   "typeToSearch": "Type here to search for a country",
   "selectCountry": "Select {country}",
   "@selectCountry": {
